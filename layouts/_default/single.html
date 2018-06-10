@@ -3,7 +3,9 @@
 <div class="main">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  <h3>{{ .Site.Params.author }}, {{ .Date.Format .Site.Params.dateform }}</h2>
+  {{ if .Params.date }}
+    <h3>{{ .Site.Params.author }}, {{ .Date.Format .Site.Params.dateform }}</h2>
+  {{ end }}
 </div>
 
 {{ partial "footer.html" . }}
