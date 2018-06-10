@@ -1,22 +1,26 @@
 {{ partial "header.html" . }}
 
-<style>
-ul {
-  text-align: center;
-  list-style-type: none;
-}
-</style>
-
 <div class="main">
-  <div class="content">
-    {{ .Content }}
+  {{ .Content }}
+  <div style="text-align: right">
     <a href="/about">About</a>
-    <ul>
-    {{ range where .Data.Pages "Section" "blog" }}
-      <li>
-        <a href={{ .Permalink }}>{{ .Title }} - {{ .Date.Format .Site.Params.dateform }}</a>
-      </li>
-    {{ end }}
+  </div>
+
+  <div class="meta">
+    <h1>{{ .Site.Params.author }}</h1>
+    <h2>{{ .Site.Params.description }}</h2>
+  </div>
+
+  <div class="posts">
+  {{ range where .Data.Pages "Section" "blog" }}
+    <a href={{ .Permalink }}>
+      <div class="post-summary">
+        <div class="title">{{ .Title }}</div>
+        <div class="date">{{ .Date.Format .Site.Params.dateform }}</div>
+        <div class="description">{{ .Description }}</div>
+      </div>
+    </a>
+  {{ end }}
   </div>
 </div>
 

@@ -4,7 +4,8 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ if .Params.date }}
-    <h3>{{ .Site.Params.author }}, {{ .Date.Format .Site.Params.dateform }}</h2>
+    <hr />
+    <p>{{ .Site.Params.author }}, {{ .Date.Format .Site.Params.dateform }}</p>
   {{ end }}
 </div>
 
