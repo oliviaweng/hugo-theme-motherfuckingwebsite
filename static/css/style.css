@@ -26,8 +26,12 @@ h3 {
   font-size: 24px;
 }
 
-a, a:visited, a:active {
+a, a:visited {
   color: #0679a7;
+}
+
+a:active, a:focus {
+  outline: 0;
 }
 
 pre > code {
@@ -85,4 +89,8 @@ hr {
 
 .posts a:hover {
   color: #0679a7;
+}
+
+.posts a:active, .posts a:focus {
+  outline: 0;
 }
