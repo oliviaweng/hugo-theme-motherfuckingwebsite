@@ -1,0 +1,37 @@
+@font-face {
+  font-family: Cooper Hewitt;
+  src: url(/fonts/cooper-hewitt.otf);
+}
+
+@font-face {
+  font-family: Cooper Hewitt;
+  font-style: italic;
+  src: url(/fonts/cooper-hewitt-italic.otf);
+}
+
+@font-face {
+  font-family: Cooper Hewitt;
+  font-weight: bold;
+  src: url(/fonts/cooper-hewitt-bold.otf);
+}
+
+@font-face {
+  font-family: Iosevka;
+  src: url(/fonts/iosevka.ttf)
+}
+
+body {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #444;
+  background-color: #eee;
+  padding: 0 10px
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  margin-top: 48px;
+  margin-bottom: 0px;
+}
