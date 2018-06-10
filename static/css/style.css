@@ -34,7 +34,7 @@ a:active, a:focus {
   outline: 0;
 }
 
-pre > code {
+code {
   font-family: Fira Mono;
 }
 
