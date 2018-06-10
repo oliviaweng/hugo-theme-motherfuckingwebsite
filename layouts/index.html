@@ -1,11 +1,20 @@
 {{ partial "header.html" . }}
 
+<style>
+ul {
+  text-align: center;
+  list-style-type: none;
+}
+</style>
+
 <div class="main">
   <div class="content">
+    {{ .Content }}
+    <a href="/about">About</a>
     <ul>
     {{ range where .Data.Pages "Section" "blog" }}
       <li>
-        <a href={{ .Permalink }}>{{ .Title }} - {{ .Date }}</a>
+        <a href={{ .Permalink }}>{{ .Title }} - {{ .Date.Format .Site.Params.dateform }}</a>
       </li>
     {{ end }}
   </div>
