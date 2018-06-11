@@ -15,7 +15,11 @@
   {{ range where .Data.Pages "Section" "blog" }}
     <a href={{ .Permalink }}>
       <div class="post-summary">
-        <div class="title">{{ .Title }}</div>
+        {{ if .Draft }}
+          <div class="title">DRAFT: {{ .Title }}</div>
+        {{ else }}
+          <div class="title">{{ .Title }}</div>
+        {{ end }}
         <div class="date">{{ .Date.Format .Site.Params.dateform }}</div>
         <div class="description">{{ .Description }}</div>
       </div>
