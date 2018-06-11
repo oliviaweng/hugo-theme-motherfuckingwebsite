@@ -1,12 +1,10 @@
 {{ partial "header.html" . }}
 
-<div class="main">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ if .Params.date }}
-    <hr />
-    <p>{{ .Site.Params.author }}, {{ .Date.Format .Site.Params.dateform }}</p>
-  {{ end }}
-</div>
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ if .Params.date }}
+  <hr />
+  <p>{{ .Site.Params.author }}, {{ .Date.Format .Site.Params.dateform }}</p>
+{{ end }}
 
 {{ partial "footer.html" . }}
