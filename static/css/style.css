@@ -69,7 +69,7 @@ blockquote {
   grid-template-rows: auto;
   grid-template-areas:
     "title date"
-    "description .";
+    "description minutes";
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -83,10 +83,17 @@ blockquote {
   grid-area: date;
   text-align: right;
   font-size: 16px;
+  align-self: center;
 }
 
 .post-summary .description {
   grid-area: description;
+  font-size: 16px;
+}
+
+.post-summary .minutes {
+  grid-area: minutes;
+  text-align: right;
   font-size: 16px;
 }
 

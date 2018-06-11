@@ -22,6 +22,7 @@
         {{ end }}
         <div class="date">{{ .Date.Format .Site.Params.dateform }}</div>
         <div class="description">{{ .Description }}</div>
+        <div class="minutes">{{ .ReadingTime }} minute read</div>
       </div>
     </a>
   {{ end }}
