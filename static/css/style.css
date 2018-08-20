@@ -35,9 +35,21 @@ a:active, a:focus {
   outline: 0;
 }
 
+pre {
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 code {
-  font-family: Fira Mono;
-  font-size: 18px;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+
+  font-family: Ubuntu Mono;
 }
 
 hr {
