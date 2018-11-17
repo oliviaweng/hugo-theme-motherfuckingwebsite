@@ -42,6 +42,10 @@ pre {
 
   padding-left: 4px;
   padding-right: 4px;
+
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
 }
 
 code {
