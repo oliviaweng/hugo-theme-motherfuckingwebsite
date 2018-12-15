@@ -6,7 +6,7 @@ body {
   color: #555555;
   background-color: #fafafa;
   padding: 0 10px;
-  font-family: Spectral;
+  font-family: Spectral, Times, serif;
 }
 
 h1, h2, h3 {
@@ -53,7 +53,7 @@ code {
   border: 1px solid #eeeeee;
   border-radius: 4px;
 
-  font-family: Ubuntu Mono;
+  font-family: Ubuntu Mono, Monaco, monospace;
 }
 
 hr {
