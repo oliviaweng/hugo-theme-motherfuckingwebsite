@@ -134,6 +134,33 @@ blockquote {
   font-size: 16px;
 }
 
+@media screen and (max-width: 450px) {
+  .post-summary {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title title"
+      "date minutes"
+      "description description";
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .post-summary .date {
+    text-align: left;
+    font-style: italic;
+    padding-right: 6px;
+    border-right: 1px solid #555555;
+  }
+
+  .post-summary .minutes {
+    text-align: left;
+    font-style: italic;
+    padding-left: 6px;
+  }
+}
+
 .posts a {
   color: #555555;
   text-decoration: none;
