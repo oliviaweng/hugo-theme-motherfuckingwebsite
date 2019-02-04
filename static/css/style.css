@@ -1,3 +1,38 @@
+@font-face {
+  font-family: Spectral;
+  src: url(/fonts/spectral/spectral-regular.ttf);
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  src: url(/fonts/spectral/spectral-italic.ttf);
+}
+
+@font-face {
+  font-family: Spectral;
+  font-weight: 700;
+  src: url(/fonts/spectral/spectral-bold.ttf);
+}
+
+@font-face {
+  font-family: Iosevka;
+  src: url(/fonts/iosevka/iosevka-term-custom-regular.ttf);
+}
+
+@font-face {
+  font-family: Iosevka;
+  font-style: italic;
+  src: url(/fonts/iosevka/iosevka-term-custom-italic.ttf);
+}
+
+@font-face {
+  font-family: Iosevka;
+  font-weight: 700;
+  src: url(/fonts/iosevka/iosevka-term-custom-bold.ttf);
+}
+
+
 body {
   margin: 40px auto;
   max-width: 650px;
@@ -6,7 +41,7 @@ body {
   color: #555555;
   background-color: #fafafa;
   padding: 0 10px;
-  font-family: Spectral, Times, serif;
+  font-family: Spectral, serif;
 }
 
 h1, h2, h3 {
@@ -53,7 +88,8 @@ code {
   border: 1px solid #eeeeee;
   border-radius: 4px;
 
-  font-family: Ubuntu Mono, Monaco, monospace;
+  font-family: Iosevka, monospace;
+  font-size: 18px;
 }
 
 hr {
