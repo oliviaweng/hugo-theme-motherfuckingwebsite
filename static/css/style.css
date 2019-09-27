@@ -17,19 +17,19 @@
 
 @font-face {
   font-family: Iosevka;
-  src: url(/fonts/iosevka/iosevka-term-custom-regular.ttf);
+  src: url(/fonts/iosevka/iosevka-term-regular.ttf);
 }
 
 @font-face {
   font-family: Iosevka;
   font-style: italic;
-  src: url(/fonts/iosevka/iosevka-term-custom-italic.ttf);
+  src: url(/fonts/iosevka/iosevka-term-italic.ttf);
 }
 
 @font-face {
   font-family: Iosevka;
   font-weight: 700;
-  src: url(/fonts/iosevka/iosevka-term-custom-bold.ttf);
+  src: url(/fonts/iosevka/iosevka-term-bold.ttf);
 }
 
 
