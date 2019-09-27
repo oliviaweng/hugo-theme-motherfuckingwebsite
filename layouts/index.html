@@ -8,7 +8,7 @@
 </div>
 
 <div class="posts">
-{{ range where .Data.Pages "Section" "blog" }}
+{{ range where .Site.RegularPages "Section" "blog" }}
   <a href={{ .Permalink }}>
     <div class="post-summary">
       {{ if .Draft }}
