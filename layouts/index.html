@@ -1,13 +1,17 @@
 {{ partial "header.html" . }}
 
-{{ .Content }}
-
 <div class="meta">
   <h1>{{ .Site.Params.author }}</h1>
   <h2>{{ .Site.Params.description }}</h2>
+  <h3><script type="text/javascript" src="date.js"></script> </h3>
+  <p>oweng at ucsd edu</p>
+  <a href="weng_cv.pdf">Curriculum vitae</a>
 </div>
 
+{{ .Content }}
+
 <div class="posts">
+<h2>Blog</h2>
 {{ range where .Site.RegularPages "Section" "blog" }}
   <a href={{ .Permalink }}>
     <div class="post-summary">
